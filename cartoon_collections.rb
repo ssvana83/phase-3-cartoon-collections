@@ -1,11 +1,14 @@
+require "pry"
 
 # method should accept an array of dwarf names and then print out each name, in number order, using puts
 def roll_call_dwarves(dwarf_names)
   dwarf_names.each_with_index do |dwarf, index|
     puts "#{index + 1}) #{dwarf}"
-    
+   binding.pry
   end
 end
+
+
 
 # method should accept an array argument of planeteer calls that look like:
 # planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
